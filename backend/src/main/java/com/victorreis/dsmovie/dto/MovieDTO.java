@@ -9,7 +9,8 @@ public record MovieDTO(
         Integer count,
         String image
 ) {
+
     public MovieDTO(Movie movie){
-        this(movie.getId(),movie.getTitle(), movie.getScore(),movie.getCounter(), movie.getImage());
+        this(movie.getId(),movie.getTitle(), movie.getScore(),movie.getCount(), movie.getImage());
     }
 }
