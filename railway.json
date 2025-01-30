@@ -1,0 +1,9 @@
+{
+  "build": {
+    "base": "backend",
+    "builder": "maven"
+  },
+  "deploy": {
+    "startCommand": "java -jar target/seu-arquivo.jar"
+  }
+}
