@@ -18,7 +18,7 @@ export default function Pagination({ page, onChange }: Props) {
                 >
                     <img src={Arrow} className="dsmovie-flip-horizontal" />
                 </button>
-                <p>{`${page?.number + 1} de ${page?.totalPages}`}</p>
+                <p>{`${page.totalElements <= 0 ? page?.number : page?.number + 1} de ${page?.totalPages}`}</p>
                 <button
                     className="dsmovie-pagination-button"
                     disabled={page?.last}
