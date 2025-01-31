@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Movie } from "../../types/movies";
 import "./styles.css";
 import { Link, useNavigate } from "react-router-dom";
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 import { BASE_URL } from "../../utils/requests";
 import { validateEmail } from "../../utils/validate";
 
@@ -43,9 +43,9 @@ export default function FormCard({ movieId }: Props) {
             }
         }
 
-        axios(config).then(response => {
+        axios(config).then((_response: AxiosResponse) => {
             navigate("/")
-        })
+        });
 
     }
 
