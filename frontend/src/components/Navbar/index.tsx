@@ -10,7 +10,7 @@ export default function index() {
                     <a href="https://github.com/devsuperior" target="_blank" rel="noreferrer">
                         <div className="dsmovie-contact-container">
                             <img src={GithubIcon} alt="Github" />
-                            <p className="dsmovie-contact-link">/devsuperior</p>
+                            <p className="dsmovie-contact-link">/VictorEdsonsr</p>
                         </div>
                     </a>
                 </div>
